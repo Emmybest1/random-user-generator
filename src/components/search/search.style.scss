@@ -1,0 +1,31 @@
+.form {
+  width: 90%;
+  margin: 0 auto;
+  &__group {
+    display: flex;
+  }
+
+  &__input {
+    width: 75%;
+    border: none;
+    padding: 0.7em;
+    background-color: #fff;
+    color: #333;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 25%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: #4416a6;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}

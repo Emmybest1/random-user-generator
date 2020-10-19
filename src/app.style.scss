@@ -1,0 +1,48 @@
+/*************************
+  General Styling
+*************************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: linear-gradient(#f7d5e9, #d6e6f8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*************************
+  Typography
+*************************/
+h1 {
+  font-size: 2rem;
+  color: #000639;
+}
+
+/*************************
+  layout
+*************************/
+.container {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
